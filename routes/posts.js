@@ -2,11 +2,8 @@ const express = require("express");
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.json({
-    message: "k"
-  });
-});
+const { addPost } = require("../controllers/post");
 
+router.get("/", addPost);
 
-module.exports = router
+module.exports = router;

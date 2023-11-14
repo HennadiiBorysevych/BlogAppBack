@@ -4,7 +4,7 @@ import mysql from "mysql";
   host: "localhost",
   user: "root",
   password: "",
-  database: ""
+  database: "blog"
 });
 
 module.exports = db
